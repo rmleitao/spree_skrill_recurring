@@ -36,7 +36,7 @@ module Spree
       return unless (params[:state] == "payment") && params[:order][:payments_attributes]
 
       payment_method = PaymentMethod.find(params[:order][:payments_attributes].first[:payment_method_id])
-      if payment_method.kind_of?(BillingIntegration::Skrill::QuickCheckout)
+      if payment_method.kind_of?(BillingIntegration::Skrill::Recurring)
         #TODO confirming payment method
         redirect_to edit_order_checkout_url(@order, :state => 'payment'),
                     :notice => t(:complete_skrill_checkout)

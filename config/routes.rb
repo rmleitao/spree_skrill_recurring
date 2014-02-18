@@ -1,4 +1,4 @@
-SpreeSkrillRecurring::Engine.routes.draw do
+Spree::Core::Engine.routes.draw do
 
   resources :orders do
     resource :checkout, :controller => 'checkout' do
