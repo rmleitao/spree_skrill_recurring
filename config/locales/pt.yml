@@ -1,0 +1,4 @@
+pt:
+  payment_has_been_cancelled: "O pagamento foi cancelado."
+  change_payment_method: "Alterar método de pagamento"
+  complete_skrill_checkout: "Por favor, complete o pagamento antes de continuar."
